@@ -16,5 +16,6 @@ def titulo (text):
     print("="*40)
     print(f"{text}")
 
-def func():
-    return "R$"
+def func(valor):
+    result = "R$" + str(valor)
+    return result
