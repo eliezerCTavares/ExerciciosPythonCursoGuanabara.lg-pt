@@ -1,19 +1,23 @@
 def metade(n):
-    return n/2
+    res = n/2
+    return res
 
 def dobro(n):
-    return n*2
+    res = n*2
+    return res
 
-def aumentar(n,pc):
+def aumentar(n, pc):
     calc = n*(pc*0.01)
-    return n+calc
+    res = n+calc
+    return res
 
-def diminuir(n,pc):
+def diminuir(n, pc):
     calc = n*(pc*0.01)
-    return n-calc
+    res = n-calc
+    return res
 
 def titulo (text):
-    print("="*40)
+    print("=" * 40)
     print(f"{text}")
 
 def func(valor):

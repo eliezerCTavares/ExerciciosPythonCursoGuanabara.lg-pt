@@ -1,17 +1,17 @@
-from ex107mod import func
+from ex107mod.func import titulo, metade, dobro, aumentar, diminuir
 
 num = 20
 
-func.titulo(f"A metade de {num} é:")
-print(func.metade(num))
+titulo(f"A metade de {num} é:")
+print(metade(num))
 
-func.titulo(f"O dobro de {num} é:")
-print(func.dobro(num))
+titulo(f"O dobro de {num} é:")
+print(dobro(num))
 
 per = 20
 
-func.titulo(f"Aumentar {per}% ao número {num}:")
-print(func.aumentar(num,per))
+titulo(f"Aumentar {per}% ao número {num}:")
+print(aumentar(num,per))
 
-func.titulo(f"Diminui {per}% ao número {num}:")
-print(func.diminuir(num,per))
+titulo(f"Diminui {per}% ao número {num}:")
+print(diminuir(num,per))
