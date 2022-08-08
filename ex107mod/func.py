@@ -15,3 +15,6 @@ def diminuir(n,pc):
 def titulo (text):
     print("="*40)
     print(f"{text}")
+
+def func():
+    return "R$"

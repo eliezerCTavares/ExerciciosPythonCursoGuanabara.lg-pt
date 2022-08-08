@@ -1,14 +1,18 @@
-from ex107mod import func
+from ex107mod import func as fn
 
-num = int(input("Valor: "))
-per = int(input("Porcentagem: "))
+num = int(input("Valor: R$ "))
+per = int(input("Porcentagem: % "))
 
-print(f"{'METADE'}{'DOBRO'}{'AUMENTAR'}{'DIMUNUIR'}")
+print("="*50)
 
-print(func.metade(num))
+print(f" {'METADE':<10} | {'DOBRO':<10} | {'AUMENTAR':<10} | {'DIMINUIR':<10}")
 
-print(func.dobro(num))
+valores = [fn.metade(num), fn.dobro(num), fn.aumentar(num,per), fn.diminuir(num,per)]
 
-print(func.aumentar(num,per))
+for v in valores:
+    if v == valores[-1]:
+        print(f" {fn.func()} {v:<8}")
+        break
+    print(f" {fn.func()} {v:<8}", end="|")
 
-print(func.diminuir(num,per))
+print("="*50)
