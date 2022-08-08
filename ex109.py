@@ -1,4 +1,4 @@
-from ex108mod import func as fn
+from ex109mod import func as fn
 
 num = int(input("Valor: R$ "))
 per = int(input("Porcentagem: % "))
