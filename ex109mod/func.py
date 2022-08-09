@@ -1,21 +1,20 @@
-def metade(n):
-    return n/2
+def metade(n, mostrar= False):
+    res = n/2
+    return res if mostrar == False else f"{moeda()}{res}"
 
-def dobro(n):
-    return n*2
+def dobro(n, mostrar= False):
+    res = n*2
+    return res if mostrar == False else f"{moeda()}{res}"
 
-def aumentar(n,pc):
+def aumentar(n,pc, mostrar= False):
     calc = n*(pc*0.01)
-    return n+calc
+    res = n+calc
+    return res if mostrar == False else f"{moeda()}{res}"
 
-def diminuir(n,pc):
+def diminuir(n,pc, mostrar= False):
     calc = n*(pc*0.01)
-    return n-calc
+    res = n-calc
+    return res if mostrar == False else f"{moeda()}{res}"
 
-def titulo (text):
-    print("="*40)
-    print(f"{text}")
-
-def func(valor):
-    result = "R$" + str(valor)
-    return result
+def moeda (rs="R$"):
+    return rs
