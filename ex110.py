@@ -1,18 +1,7 @@
-from ex110mod import func as fn
+from ex110mod.func import resumo
 
 num = int(input("Valor: R$ "))
-per = int(input("Porcentagem: % "))
+aum = int(input("Porcentagem de aumento: % "))
+red = int(input("Porcentagem de redução: % "))
 
-print("="*50)
-
-print(f" {'METADE':<10} | {'DOBRO':<10} | {'AUMENTAR':<10} | {'DIMINUIR':<10}")
-
-print(f" {fn.func(fn.metade(num)):<9} ", end= " | ")
-
-print(f"{fn.func(fn.dobro(num)):<9} ", end= " | ")
-
-print(f"{fn.func(fn.aumentar(num,per)):<9} ", end= " | ")
-
-print(f"{fn.func(fn.diminuir(num,per)):<9}")
-
-print("="*50)
+resumo(num, aum, red)
