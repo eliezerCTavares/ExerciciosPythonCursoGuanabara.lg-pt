@@ -1,3 +1,5 @@
+#exercício 28 curso de python do gustavo guanabara
+
 from random import randint
 from time import sleep
 cont = "Y"
