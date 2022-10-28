@@ -1,5 +1,5 @@
 numero = str(input("Digite um número Decimal inteiro para converter em Hexadecimal: "))
-#
+# Conversor Numérico: Decimal -> Hexadecimal -> Octal -> 
 nb = int(numero)
 endgame = False
 bi_list = ""
