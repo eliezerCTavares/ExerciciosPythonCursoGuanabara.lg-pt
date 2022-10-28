@@ -17,7 +17,7 @@ def diminuir(n, pc):
     return res
 
 def titulo (text):
-    print("=" * 40)
+    print("_" * 40)
     print(f"{text}")
 
 def func(valor):

@@ -1,8 +1,8 @@
 numero = str(input("Digite um número Decimal inteiro para converter em Hexadecimal: "))
-# Conversor Numérico: Decimal -> Hexadecimal -> Octal -> 
+# Conversor Numérico: Decimal -> Hexadecimal
 nb = int(numero)
 endgame = False
-bi_list = ""
+bi_list = []
 while endgame == False:
     div_ = nb // 16
     mod_ = nb % 16
